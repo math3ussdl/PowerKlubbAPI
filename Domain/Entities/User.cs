@@ -14,7 +14,7 @@ public sealed class User : AuditableEntity
 	[Required, MaxLength(200)]
 	public string Bio { get; set; }
 	
-	[Required, EmailAddress, MaxLength(120)]
+	[Required, EmailAddress, MinLength(12), MaxLength(120)]
 	public string Email { get; set; }
 	
 	[Required]

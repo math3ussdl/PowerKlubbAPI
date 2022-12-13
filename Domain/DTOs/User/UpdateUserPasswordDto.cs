@@ -2,7 +2,7 @@ namespace PowerKlubbAPI.Domain.DTOs.User;
 
 using Common;
 
-public sealed class UpdateUserPasswordDto : FlatAuditableDto
+public sealed class UpdateUserPasswordDto : FlatAuditableDto, IUserPasswordsDto
 {
 	public string OldPassword { get; set; }
 	public string Password { get; set; }
