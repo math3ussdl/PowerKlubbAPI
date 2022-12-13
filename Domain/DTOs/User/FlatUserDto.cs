@@ -2,7 +2,7 @@ namespace PowerKlubbAPI.Domain.DTOs.User;
 
 using Common;
 
-public sealed class FlatProductDto : FlatAuditableDto
+public sealed class FlatUserDto : FlatAuditableDto
 {
 	public string Name { get; set; }
 	public string ProfileImage { get; set; } = string.Empty;
