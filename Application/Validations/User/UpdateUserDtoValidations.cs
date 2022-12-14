@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace PowerKlubbAPI.Domain.Validations.User;
+namespace PowerKlubbAPI.Application.Validations.User;
 
 using Common;
 using DTOs.User;

@@ -1,8 +1,9 @@
 using AutoMapper;
-using PowerKlubbAPI.Domain.DTOs.User;
 using PowerKlubbAPI.Domain.Entities;
 
-namespace PowerKlubbAPI.Domain.Mappers;
+namespace PowerKlubbAPI.Application.Mappers;
+
+using DTOs.User;
 
 public sealed class UserMappers : Profile
 {

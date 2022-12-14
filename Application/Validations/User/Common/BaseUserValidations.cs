@@ -1,8 +1,9 @@
 using FluentValidation;
 using Global.Common.Sources.Errors;
-using PowerKlubbAPI.Domain.DTOs.User;
 
-namespace PowerKlubbAPI.Domain.Validations.User.Common;
+namespace PowerKlubbAPI.Application.Validations.User.Common;
+
+using DTOs.User;
 
 public class BaseUserValidations : AbstractValidator<IUserDto>
 {

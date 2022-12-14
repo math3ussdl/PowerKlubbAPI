@@ -1,7 +1,7 @@
 using FluentValidation;
 using Global.Common.Sources.Errors;
 
-namespace PowerKlubbAPI.Domain.Validations.User.Common;
+namespace PowerKlubbAPI.Application.Validations.User.Common;
 
 using DTOs.User;
 

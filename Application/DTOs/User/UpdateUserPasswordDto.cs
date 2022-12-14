@@ -1,4 +1,4 @@
-namespace PowerKlubbAPI.Domain.DTOs.User;
+namespace PowerKlubbAPI.Application.DTOs.User;
 
 using Common;
 

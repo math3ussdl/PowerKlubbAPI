@@ -1,6 +1,6 @@
-namespace PowerKlubbAPI.Domain.Contracts.Persistence.Common;
+using PowerKlubbAPI.Domain.Entities.Common;
 
-using Entities.Common;
+namespace PowerKlubbAPI.Application.Contracts.Persistence.Common;
 
 public interface IGenericRepository<TEntity, in TId>
 	where TEntity : AuditableEntity

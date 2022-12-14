@@ -1,7 +1,8 @@
-namespace PowerKlubbAPI.Domain.Contracts.Persistence;
+using PowerKlubbAPI.Domain.Entities;
+
+namespace PowerKlubbAPI.Application.Contracts.Persistence;
 
 using Common;
-using Entities;
 
 public interface IUserRepository : IGenericRepository<User, Guid>
 {

@@ -1,4 +1,4 @@
-namespace PowerKlubbAPI.Domain.DTOs.Common;
+namespace PowerKlubbAPI.Application.DTOs.Common;
 
 public class FlatAuditableDto
 {

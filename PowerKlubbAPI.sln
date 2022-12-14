@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Common.Sources", "Sh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{1EDDE70D-0FCC-47C1-A307-3FB32F26A908}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{AB27581E-7E03-495C-AEEE-D1C12D349608}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,7 @@ Global
 		{46C57C62-F32A-4A1A-8282-5565834D05FF} = {3DFE818B-166F-4497-8913-4546B552DBB8}
 		{892FB36A-EDE1-4CE0-920A-D03D9BF9DBAC} = {3DFE818B-166F-4497-8913-4546B552DBB8}
 		{1EDDE70D-0FCC-47C1-A307-3FB32F26A908} = {A3267BA8-AACF-4B29-8EC4-52E4768CD4FA}
+		{AB27581E-7E03-495C-AEEE-D1C12D349608} = {A3267BA8-AACF-4B29-8EC4-52E4768CD4FA}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3527BEA2-E1EB-44AA-AE1D-8C5DF9CE75BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +45,9 @@ Global
 		{1EDDE70D-0FCC-47C1-A307-3FB32F26A908}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EDDE70D-0FCC-47C1-A307-3FB32F26A908}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EDDE70D-0FCC-47C1-A307-3FB32F26A908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB27581E-7E03-495C-AEEE-D1C12D349608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB27581E-7E03-495C-AEEE-D1C12D349608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB27581E-7E03-495C-AEEE-D1C12D349608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB27581E-7E03-495C-AEEE-D1C12D349608}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
