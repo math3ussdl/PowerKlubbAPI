@@ -1,4 +1,4 @@
-namespace PowerKlubbAPI.Domain.Interfaces.Persistence;
+namespace PowerKlubbAPI.Domain.Contracts.Persistence;
 
 using Common;
 using Entities;
