@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <RootNamespace>PowerKlubbAPI.Infrastructure</RootNamespace>
+        <LangVersion>default</LangVersion>
+        <AssemblyName>PowerKlubbAPI.Infrastructure</AssemblyName>
+    </PropertyGroup>
+
+</Project>
