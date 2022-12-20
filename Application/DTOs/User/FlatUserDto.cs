@@ -5,6 +5,7 @@ using Common;
 public sealed class FlatUserDto : FlatAuditableDto
 {
 	public string Name { get; set; }
+	public string Nick { get; set; }
 	public string ProfileImage { get; set; } = string.Empty;
 	public string Email { get; set; }
 }

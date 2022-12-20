@@ -9,6 +9,9 @@ public sealed class User : AuditableEntity
 	[Required, MinLength(4), MaxLength(40)]
 	public string Name { get; set; }
 	
+	[Required, MinLength(4), MaxLength(20)]
+	public string Nick { get; set; }
+	
 	public string ProfileImage { get; set; } = string.Empty;
 	
 	[Required, MaxLength(200)]

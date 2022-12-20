@@ -25,6 +25,8 @@ public class BaseUserPasswordsValidations : AbstractValidator<IUserPasswordsDto>
 			.MinimumLength(6)
 				.WithMessage(ExceptionsTranslated.ShortField)
 			.MaximumLength(12)
-				.WithMessage(ExceptionsTranslated.LongField);
+				.WithMessage(ExceptionsTranslated.LongField)
+			.Equal(u => u.Password)
+				.WithMessage(ExceptionsTranslated.ConfirmationError);
 	}
 }

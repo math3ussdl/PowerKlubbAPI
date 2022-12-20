@@ -18,6 +18,15 @@ public class BaseUserValidations : AbstractValidator<IUserDto>
 			.MaximumLength(40)
 				.WithMessage(ExceptionsTranslated.LongField);
 		
+		RuleFor(u => u.Nick)
+			.Cascade(CascadeMode.Continue)
+			.NotEmpty()
+				.WithMessage(ExceptionsTranslated.RequiredField)
+			.MinimumLength(4)
+				.WithMessage(ExceptionsTranslated.ShortField)
+			.MaximumLength(20)
+				.WithMessage(ExceptionsTranslated.LongField);
+		
 		RuleFor(u => u.Bio)
 			.Cascade(CascadeMode.Continue)
 			.NotEmpty()
