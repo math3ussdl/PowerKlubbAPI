@@ -8,7 +8,7 @@ namespace PowerKlubbAPI.Application.Features.Users.Queries.GetUserByNick;
 using Contracts.Persistence;
 using DTOs.User;
 
-public class GetUserByNickQueryHandler
+public sealed class GetUserByNickQueryHandler
 	: IRequestHandler<GetUserByNickQuery, BaseQueryResponse<UserDto>>
 {
 	private readonly IUserRepository _userRepository;

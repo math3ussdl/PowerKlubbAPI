@@ -8,7 +8,7 @@ namespace PowerKlubbAPI.Application.Features.Users.Commands.UpdateUser;
 
 using Contracts.Persistence;
 
-public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand, BaseResponse>
+public sealed class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand, BaseResponse>
 {
 	private readonly IUserRepository _userRepository;
 	private readonly IMapper _mapper;

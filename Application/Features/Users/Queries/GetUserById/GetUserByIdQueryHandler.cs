@@ -8,7 +8,7 @@ namespace PowerKlubbAPI.Application.Features.Users.Queries.GetUserById;
 using Contracts.Persistence;
 using DTOs.User;
 
-public class GetUserByIdQueryHandler
+public sealed class GetUserByIdQueryHandler
 	: IRequestHandler<GetUserByIdQuery, BaseQueryResponse<UserDto>>
 {
 	private readonly IUserRepository _userRepository;

@@ -6,7 +6,7 @@ namespace PowerKlubbAPI.Application.Features.Users.Commands.DeleteUser;
 
 using Contracts.Persistence;
 
-public class DeleteUserCommandHandler : IRequestHandler<DeleteUserCommand, BaseResponse>
+public sealed class DeleteUserCommandHandler : IRequestHandler<DeleteUserCommand, BaseResponse>
 {
 	private readonly IUserRepository _userRepository;
 

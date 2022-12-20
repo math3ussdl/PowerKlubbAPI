@@ -5,4 +5,5 @@ namespace PowerKlubbAPI.Application.Features.Users.Queries.GetUsers;
 
 using DTOs.User;
 
-public record GetUsersQuery(string QuerySearch) : IRequest<BaseQueryResponse<IReadOnlyList<FlatUserDto>>>;
+public record GetUsersQuery(string QuerySearch, int Page, int PageSize)
+	: IRequest<BaseQueryResponse<IReadOnlyList<FlatUserDto>>>;

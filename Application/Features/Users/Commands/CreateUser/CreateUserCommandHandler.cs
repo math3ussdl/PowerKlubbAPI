@@ -12,7 +12,7 @@ using Contracts.Persistence;
 using Models;
 using Validations.User;
 
-public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, BaseResponse>
+public sealed class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, BaseResponse>
 {
 	private readonly IUserRepository _userRepository;
 	private readonly IMapper _mapper;

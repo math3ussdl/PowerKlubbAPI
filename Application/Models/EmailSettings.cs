@@ -1,6 +1,6 @@
 namespace PowerKlubbAPI.Application.Models;
 
-public class EmailSettings
+public sealed class EmailSettings
 {
 	public string ApiKey { get; set; }
 	public string FromAddress { get; set; }

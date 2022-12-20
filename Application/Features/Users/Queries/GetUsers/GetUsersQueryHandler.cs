@@ -1,5 +1,6 @@
 using AutoMapper;
 using MediatR;
+using PowerKlubbAPI.Application.Extensions;
 using Shared.Common.Sources.Enums;
 using Shared.Common.Sources.Responses;
 
@@ -8,7 +9,7 @@ namespace PowerKlubbAPI.Application.Features.Users.Queries.GetUsers;
 using Contracts.Persistence;
 using DTOs.User;
 
-public class GetUsersQueryHandler
+public sealed class GetUsersQueryHandler
 	: IRequestHandler<GetUsersQuery, BaseQueryResponse<IReadOnlyList<FlatUserDto>>>
 {
 	private readonly IUserRepository _userRepository;
@@ -27,7 +28,8 @@ public class GetUsersQueryHandler
 
 		try
 		{
-			var users = await _userRepository.GetAsync(request.QuerySearch);
+			var query = _userRepository.Get(request.QuerySearch);
+			var users = await query.PaginateAsync(request.Page, request.PageSize);
 
 			response.Success = true;
 			response.Data = _mapper.Map<IReadOnlyList<FlatUserDto>>(users);
